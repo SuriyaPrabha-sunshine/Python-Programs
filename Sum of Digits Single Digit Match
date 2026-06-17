@@ -1,0 +1,16 @@
+n = list(map(int, input().split()))
+sum = int(input())
+for num in n:
+    temp = num
+    s = 0
+
+    
+    while temp >= 10:
+        s = 0
+        while temp > 0:
+            s += temp % 10
+            temp //= 10
+        temp = s
+
+    if temp == sum:
+        print(num)
