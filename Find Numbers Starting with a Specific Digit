@@ -1,0 +1,10 @@
+n = list(map(int,input().split()))
+starts=int(input("Number starts with"))
+
+for num in n:
+    temp = num
+
+    while temp >= 10:
+        temp = temp // 10
+        if temp == starts:
+            print(num)
