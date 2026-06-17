@@ -1,0 +1,16 @@
+n = int(input("Enter Number: "))
+d = int(input("Enter Digit to Remove: "))
+
+result= 0
+place = 1
+
+while n:
+    a = n % 10
+
+    if a != d:
+        result = result + a * place
+        place = place * 10
+
+    n = n // 10
+
+print("Number after removing digit:", result)
