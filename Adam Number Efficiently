@@ -1,0 +1,6 @@
+n=int(input("Enter Number"))
+n1=int(str(n)[::-1])
+if((int(str(n*n)[::-1]))==n1*n1):
+    print("adam")
+else:
+    print("not a adam")
